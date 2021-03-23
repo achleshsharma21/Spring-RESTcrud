@@ -7,22 +7,22 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-            	bat "mvn clean -f Spring-RESTcrud"
+            	bat "mvn clean"
             }
         }
         stage('install') {
             steps {
-                bat "mvn install -f Spring-RESTcrud"
+                bat "mvn install"
             }
         }
         stage('test') {
             steps {
-                bat "mvn test -f Spring-RESTcrud"
+                bat "mvn test"
             }
         }
         stage('package') {
             steps {
-                bat "mvn package -f Spring-RESTcrud"
+                bat "mvn package"
             }
         }
     }
