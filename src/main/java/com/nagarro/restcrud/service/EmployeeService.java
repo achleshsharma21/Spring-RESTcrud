@@ -30,7 +30,7 @@ public class EmployeeService {
 	public String deleteEmployee(int id) {
 
 		repository.deleteById(id);
-		return "Employee Removed!!";
+		return "Employee Deleted!!";
 	}
 
 	public Employee updateEmployee(Employee employee)
